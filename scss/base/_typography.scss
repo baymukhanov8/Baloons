@@ -1,0 +1,97 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $color-gray;
+    font-size: $font-size-paragraph;
+    letter-spacing: 0.2rem;
+}
+.title-first {
+    color: $color-white;
+    &__main {
+        opacity: 0;
+        display: block;
+        font-weight: 800;
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        animation: leftToRight 1s ease forwards;
+        @include respond(tab-land) {
+            font-size: 4rem;
+        }
+        @include respond(tab-port) {
+            font-size: 3.6rem;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0;
+        }
+    }
+    &__secondary {
+        opacity: 0;
+        display: block;
+        font-weight: 200;
+        letter-spacing: 0.5rem;
+        line-height: 4.8rem;
+        letter-spacing: 0.5rem;
+        animation: rightToLeft 1s ease 500ms forwards;
+        margin-bottom: 6.5rem;
+        @include respond(tab-land) {
+            font-size: 3.5rem;
+            margin-bottom: 3.5rem;
+        }
+        @include respond(tab-port) {
+            font-size: 3.2;
+            letter-spacing: 0.2rem;
+        }
+    }
+}
+
+.title-secondary {
+    font-size: $font-size-h2;
+    letter-spacing: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(
+        90deg,
+        rgba($color-brown-light, 0.7) 0.03%,
+        rgba($color-brown-dark, 0.7) 99.94%
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    @include respond(tab-land) {
+        font-size: 3rem;
+    }
+    @include respond(tab-port) {
+        letter-spacing: 0.6rem;
+    }
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: $text-shadow;
+    }
+    &_white {
+        color: $color-white;
+    }
+}
+.title-third {
+    letter-spacing: 0.2rem;
+    font-size: $font-size-h3;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include respond(tab-land) {
+        font-size: 1.8rem;
+    }
+}
+.paragraph {
+    font-size: $font-size-paragraph;
+    letter-spacing: 0.2rem;
+    line-height: 140%;
+    font-weight: 400;
+    @include respond(tab-land) {
+        font-size: 1.5rem;
+    }
+}

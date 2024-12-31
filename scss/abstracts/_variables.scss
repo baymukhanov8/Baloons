@@ -1,0 +1,20 @@
+// Переменные используются для задания переиспользуемых свойств
+$color-gray: #777777;
+$color-brown-light: #ba8554;
+$color-brown-dark: #a14f03;
+$color-black: #000000;
+$color-white: #ffffff;
+
+$margin-vertical-big: 8rem;
+
+$grid-width: 114rem;
+$gutter-horizontal: 6rem;
+
+// Тени
+$box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+$box-shadow-active: 0 2px 4px rgba(0, 0, 0, 0.5);
+$text-shadow: 0rem 0.4rem 0.4rem rgba($color-black, 0.25);
+
+$font-size-paragraph: 1.6rem;
+$font-size-h2: 3.6rem;
+$font-size-h3: 2rem;

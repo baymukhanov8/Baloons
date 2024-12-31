@@ -1,0 +1,34 @@
+.text-align {
+    text-align: center;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-3 {
+    margin-bottom: 3rem;
+}
+.mb-5 {
+    margin-bottom: 5rem;
+    @include respond(tab-port) {
+        margin-bottom: 7rem;
+    }
+}
+.mb-8 {
+    margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem;
+    }
+}
+.hidden-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
